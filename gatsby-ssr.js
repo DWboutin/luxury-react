@@ -16,3 +16,13 @@ export const wrapPageElement = ({ element, props }) => {
     </Provider>
   )
 }
+
+export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
+  const pluginsCSS = <link rel="stylesheet" href="assets/css/plugins.css" />
+  const styleCSS = <link rel="stylesheet" href="assets/css/style.css" />
+  const pluginsJs = <script key="pluginsjs-script" src="assets/js/plugins.js" />
+  const mainJs = <script key="pluginsjs-script" src="assets/js/main.js" async />
+
+  setHeadComponents([pluginsCSS, styleCSS, pluginsJs])
+  setPostBodyComponents([mainJs])
+}
