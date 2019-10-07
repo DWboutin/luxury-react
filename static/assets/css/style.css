@@ -1,3 +1,10 @@
+#___gatsby, #gatsby-focus-wrapper, iframe {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border:0;
+}
 /*-----------------------------------------------------------------------------------
 
     
