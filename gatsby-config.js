@@ -4,7 +4,7 @@ module.exports = {
     title: 'Luxury smoke and vape - Where luxury meets quality',
     description:
       'Enter your email for a chance to win 1 of 3 $50 e-gift cards and be notified when LuxurySmokeandVape.com officially opens! Keep an eye out for upcoming deals and discounts. Opening Soon!!!',
-    author: '@dwboutin'
+    author: 'LuxurySmokeAndVape.com'
   },
   plugins: [
     'gatsby-plugin-sass',

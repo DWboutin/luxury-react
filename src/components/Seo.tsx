@@ -38,19 +38,19 @@ function SEO({ description, lang, keywords, title }: SeoProps) {
               },
               {
                 property: `og:image`,
-                content: `${process.env.SITE_URL}/img/image.jpg`
+                content: `assets/img/image.jpg`
               },
               {
                 property: `og:url`,
-                content: process.env.SITE_URL
+                content: 'https://luxurysmokeandvape.com/'
               },
               {
                 property: `og:image:width`,
-                content: 2500
+                content: 812
               },
               {
                 property: `og:image:height`,
-                content: 1600
+                content: 508
               },
               {
                 property: `og:locale`,
@@ -78,7 +78,7 @@ function SEO({ description, lang, keywords, title }: SeoProps) {
               },
               {
                 name: `twitter:image`,
-                content: `${process.env.SITE_URL}/img/image.jpg`
+                content: `images/image.jpg`
               },
               {
                 name: `twitter:description`,
