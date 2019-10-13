@@ -21,45 +21,100 @@ function SEO({ description, lang, keywords, title }: SeoProps) {
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
               {
-                name: 'description',
-                content: metaDescription
+                name: `locale`,
+                content: 'en'
               },
               {
-                property: 'og:title',
-                content: title
+                name: `description`,
+                content: data.site.siteMetadata.description
               },
               {
-                property: 'og:description',
-                content: metaDescription
+                property: `og:title`,
+                content: data.site.siteMetadata.title
               },
               {
-                property: 'og:type',
-                content: 'website'
+                property: `og:site_name`,
+                content: 'Luxury smoke and vape'
               },
               {
-                name: 'twitter:card',
-                content: 'summary'
+                property: `og:image`,
+                content: `${process.env.SITE_URL}/img/image.jpg`
               },
               {
-                name: 'twitter:creator',
+                property: `og:url`,
+                content: process.env.SITE_URL
+              },
+              {
+                property: `og:image:width`,
+                content: 2500
+              },
+              {
+                property: `og:image:height`,
+                content: 1600
+              },
+              {
+                property: `og:locale`,
+                content: 'en_us'
+              },
+              {
+                property: `og:description`,
+                content: data.site.siteMetadata.description
+              },
+              {
+                property: `og:type`,
+                content: `website`
+              },
+              {
+                name: `twitter:card`,
+                content: `summary_large_image`
+              },
+              {
+                name: `twitter:creator`,
                 content: data.site.siteMetadata.author
               },
               {
-                name: 'twitter:title',
-                content: title
+                name: `twitter:title`,
+                content: data.site.siteMetadata.title
               },
               {
-                name: 'twitter:description',
-                content: metaDescription
+                name: `twitter:image`,
+                content: `${process.env.SITE_URL}/img/image.jpg`
+              },
+              {
+                name: `twitter:description`,
+                content: data.site.siteMetadata.description
+              },
+              {
+                name: `dc.description`,
+                lang: 'en',
+                content: data.site.siteMetadata.description
+              },
+              {
+                name: `dc.format`,
+                scheme: 'IMT',
+                content: 'text/html'
+              },
+              {
+                name: `dc.identifier`,
+                content: '/meta-tags/dublin/'
+              },
+              {
+                name: `dc.source`,
+                content: '/meta-tags/'
+              },
+              {
+                name: `dc.title`,
+                content: data.site.siteMetadata.title
+              },
+              {
+                name: `dc.language`,
+                content: 'en'
+              },
+              {
+                name: `dc.coverage`,
+                content: 'United-States'
               }
-            ].concat(
-              keywords.length > 0
-                ? {
-                    name: 'keywords',
-                    content: keywords.join(', ')
-                  }
-                : []
-            )}
+            ]}
           />
         )
       }}

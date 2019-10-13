@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     baseLanguage: 'en',
-    title: 'Gatsby react-intl starter',
+    title: 'Luxury smoke and vape - Where luxury meets quality',
     description:
-      'Kick off your next, great Gatsby project with this react-intl starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+      'Enter your email for a chance to win 1 of 3 $50 e-gift cards and be notified when LuxurySmokeandVape.com officially opens! Keep an eye out for upcoming deals and discounts. Opening Soon!!!',
     author: '@dwboutin'
   },
   plugins: [
@@ -17,10 +17,10 @@ module.exports = {
         name: 'gatsby-starter-react-intl',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#000000',
+        theme_color: '#000000',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png' // This path is relative to the root of the site.
+        icon: 'src/images/icon.png' // This path is relative to the root of the site.
       }
     },
     'gatsby-plugin-typescript'
